@@ -1,0 +1,213 @@
+/*estilização da nav, log e link*/
+body {
+  font-family: Arial, sans-serif;
+}
+.logo{
+  width: 120px;
+  height: auto;
+}
+.navbar {
+  height: auto;
+}
+
+.nav-link{
+  margin: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: #0cac19a4;
+  
+}
+/*Aqui termina a nav,log e link*/
+
+/* BOTÃO TOGGLER (MOBILE) */
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* CORREÇÃO DO MENU RESPONSIVO */
+#navbarContent {
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  #navbarContent {
+    margin-left: 15%;
+  }
+}
+/* aqui termina a navbar */
+
+
+/* watsapp float*/
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #20bf5d;
+}
+/* Aqui termina o watsapp float*/
+
+/* emergência */
+.alerta-emergente {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #fef3c7;
+  color: #92400e;
+  padding: 1rem 1.25rem;
+  border-left: 6px solid #f59e0b;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 300px;
+  z-index: 999;
+  animation: slideIn 0.5s ease;
+}
+.conteudo-alerta {
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.btn-fechar-alerta {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #92400e;
+  cursor: pointer;
+}
+/* Aqui termina a emergência */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+/* Formulário */
+.form-label i {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.form-control {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+/* Aqui termina o formulário */
+.alert-success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebd5c;
+}
+
+.btn-email {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-email:hover {
+  background-color: #0b5ed7;
+}
+/* Aqui termina o formulário */
+
+/* Footer Ajustes */
+
+/* Ícones Sociais em Bolhas */
+.icon-social {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon-social:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Cores personalizadas */
+.bg-whatsapp {
+  background-color: #25D366;
+}
+
+.bg-facebook {
+  background-color: #3b5998;
+}
+
+.bg-instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+}
+
+.bg-tiktok {
+  background-color: #010101;
+}
+
+/* style.css */

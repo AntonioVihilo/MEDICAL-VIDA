@@ -1,0 +1,207 @@
+/*estilização da nav, log e link*/
+
+.logo{
+  width: 120px;
+  height: auto;
+}
+.navbar {
+  height: auto;
+}
+
+.nav-link{
+  margin: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: #0cac19a4;
+  
+}
+/*Aqui termina a nav,log e link*/
+
+
+/* BOTÃO TOGGLER (MOBILE) */
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* CORREÇÃO DO MENU RESPONSIVO */
+#navbarContent {
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  #navbarContent {
+    margin-left: 15%;
+  }
+}
+/* aqui termina a navbar */
+
+/* watsapp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #20bf5d;
+}
+
+
+/* emergência */
+.alerta-emergente {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #fef3c7;
+  color: #92400e;
+  padding: 1rem 1.25rem;
+  border-left: 6px solid #f59e0b;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 300px;
+  z-index: 999;
+  animation: slideIn 0.5s ease;
+}
+.conteudo-alerta {
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.btn-fechar-alerta {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #92400e;
+  cursor: pointer;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#imgagendar{
+  border-radius: 30px;
+}
+
+.hero-agendamento {
+  background: linear-gradient(to right, #007f5f, #2b9348);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-agendamento h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-agendamento p {
+  font-size: 1.2rem-
+}
+
+
+.agendamento-form label {
+  font-weight: 600;
+}
+
+.btn-agendar {
+  background-color: #25d366;
+  color: white;
+  font-weight: bold;
+}
+#mensagemConfirmacao {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-agendar:hover {
+  background-color: #1da851;
+}
+
+.benefits-section {
+  background-color: #e9f5ee;
+  padding: 60px 0;
+  border-top: 3px solid #2b9348;
+  border-bottom: 3px solid #2b9348;
+}
+
+.benefit-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+
+/* Ícones Sociais em Bolhas */
+.icon-social {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon-social:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Cores personalizadas */
+.bg-whatsapp {
+  background-color: #25D366;
+}
+
+.bg-facebook {
+  background-color: #3b5998;
+}
+
+.bg-instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+}
+
+.bg-tiktok {
+  background-color: #010101;
+}

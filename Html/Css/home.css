@@ -1,0 +1,365 @@
+/*estilização da nav, log e link*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+.logo{
+  width: 120px;
+  height: auto;
+}
+.navbar {
+  height: auto;
+}
+
+.nav-link{
+  margin: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: #0cac19a4;
+  
+}
+/*Aqui termina a nav,log e link*/
+
+
+/* BOTÃO TOGGLER (MOBILE) */
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* BOTÃO TOGGLER (MOBILE) */
+
+/* CORREÇÃO DO MENU RESPONSIVO */
+#navbarContent {
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  #navbarContent {
+    margin-left: 15%;
+  }
+}
+/* aqui termina a CORREÇÃO DO MENU RESPONSIVO */
+
+
+/*carousel*/  
+.carousel-item img{
+    position: relative;
+    height: 84vh;
+  }
+
+#sobre {
+  background-color: #f9f9f9;
+}
+
+/*aqui começa estilização do card*/
+.card h5 {
+  font-size: 1.25rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+/*aqui termina estilização do card*/
+
+#searchServicoInput {
+  height: 48px;
+  font-size: 1rem;
+}
+/*Aqui começa o serviços em destaque*/
+#destaques img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  filter: grayscale(0%);
+  transition: transform 0.3s ease;
+}
+
+#destaques img:hover {
+  transform: scale(1.3);
+ 
+}
+/*aqui termina serviços em destaque*/
+
+#cgeral{
+  width: 64px;
+  height: 64px;
+}
+
+
+/*aqui começa a imagem da galeria*/
+#texto{
+  color: #184aeec4 ;
+
+}
+/* Galeria de Imagens/fotos */
+
+.fotos-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.fotos-track {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fotos-row {
+  display: flex;
+  animation: deslizar 40s linear infinite;
+}
+
+.fotos-row img {
+  width: 25%; /* 4 por linha no desktop */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Animação para deslizar */
+@keyframes deslizar {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .fotos-row img {
+    width: 50%; /* 2 por linha no mobile */
+    height: 150px;
+  }
+}
+/*aqui começa a imagem da galeria*/
+.gallery-item-small {
+  height: 280px; /* Metade do tamanho padrão */
+}
+
+.gallery-item-small img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item-small:hover img {
+  transform: scale(1.03);
+  filter: brightness(90%);
+}
+
+/*aqui termina a fotos*/
+
+/*aqui começa a galeria de fotos*/
+
+
+.galeria-img {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 180px;
+}
+
+.galeria-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.galeria-img:hover img {
+  transform: scale(1.05);
+  filter: brightness(80%);
+} 
+/*aqui termina a galeria de fotos*/
+
+/*aqui começa o convenios*/
+.conve-section {
+  background-color: #ffff;
+  border-top: 3px solid  #f8f9fa;
+  border-bottom: 3px solid  #f8f9fa;
+}
+
+.conve-marquee {
+  overflow: hidden;
+  position: relative;
+  height: 140px;
+}
+
+.conve-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-horizontal 30s linear infinite;
+  gap: 60px;
+  align-items: center;
+}
+
+.conve-track img {
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.5s;
+}
+
+.conve-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*aqui termina o convenios*/
+
+/* Aqui começa a estilização dos icons das seguradoras a baixo*/
+#Njinga{
+  height: 160px;
+}
+#fortaleza{
+  height: 160px;
+}
+#metcare{
+  height: 160px;
+}
+/* Aqui começa a estilização dos icons das seguradoras a baixo*/
+
+/* Diferenciado */
+.diferencial-card {
+  transition: all 0.3s ease;
+}
+
+.diferencial-card:hover {
+  transform: scale(1.13);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+  background-color: #f9f9f9;
+}
+/* termina o Diferenciado */
+
+#campoBusca {
+  max-width: 600px;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 0.75rem;
+}
+
+/* watsapp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #20bf5d;
+}
+/* termina watsapp */
+
+/* emergência */
+.alerta-emergente {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #fef3c7;
+  color: #92400e;
+  padding: 1rem 1.25rem;
+  border-left: 6px solid #f59e0b;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 300px;
+  z-index: 999;
+  animation: slideIn 0.5s ease;
+}
+
+
+.CTA{
+  background: #25d366;
+}
+
+.conteudo-alerta {
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.btn-fechar-alerta {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #92400e;
+  cursor: pointer;
+}
+/* termina emergência */
+
+@keyframes slideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* redes sociais*/
+/* Ícones Sociais em Bolhas */
+.icon-social {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon-social:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+/* Termina redes sociais*/
+
+/* Cores personalizadas dos icon das redes sociais*/
+.bg-whatsapp {
+  background-color: #25D366;
+}
+
+.bg-facebook {
+  background-color: #3b5998;
+}
+
+.bg-instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+}
+
+.bg-tiktok {
+  background-color: #070707;
+}
+
+/* Cores personalizadas dos icon das redes sociais */

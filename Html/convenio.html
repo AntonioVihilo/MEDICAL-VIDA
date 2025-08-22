@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords " content="MEDICAL VIDA, saúde, medicina, hospitalar, atendimento médico, serviços de saúde">
+      <meta name="description"HS MEDICAL VIDA é uma empresa dedicada a oferecer serviços de saúde de qualidade, com foco no atendimento médico e hospitalar. Nossa missão é garantir o bem-estar e a saúde de nossos pacientes através de uma equipe especializada e comprometida.
+      A Clínica Medical Vida, é uma empresa Angolana, dedicada aos serviços de assistência médica, medicamentosa, imagiologia, analises clínica e de reabilitação física.>
+  <link rel="shortcut icon" href="imagem/log.png" type="image/x-icon">
+
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <title>H.S Medical Vida</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Estilo personalizado Css -->
+  <link rel="stylesheet" href="Css/convenio.css" />
+</head>
+
+<!-- WhatsApp Flutuante -->
+<a href="https://wa.me/930139090" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+<!--Aqui termina WhatsApp Flutuante -->
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" data-aos="fade-up" data-aos="fade-down">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html"><img class="logo" src="imagem/log.png" alt="icondaclinica"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent" data-aos="fade-up" data-aos="fade-down">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="serviço.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="convenio.html">Convênios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Aqui termina a Navbar -->
+
+  <!-- Carrossel com frase -->
+  <!-- SLIDE DE CONVÊNIOS (FADE + DESTAQUE) -->
+<div id="carouselConvenios" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel" data-bs-interval="4000">
+  <div class="carousel-inner">
+
+    <!-- SLIDE 1 -->
+    <div class="carousel-item active position-relative">
+      <img src="imagem/Convenios/1.jpg" class="d-block w-100" alt="Convênio 1">
+      <div class="overlay-dark"></div>
+      <div class="carousel-caption d-none d-md-block rounded p-3">
+        <h5 class="text-warning fw-bold">Nova parceria com o Complexo Escolar Privado Emília Júlia</h5>
+        <p> Parceria confirmada com a nossa clínica.</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="carousel-item position-relative">
+      <img src="imagem/Convenios/2.jpg" class="d-block w-100" alt="Convênio 2">
+      <div class="overlay-dark"></div>
+      <div class="carousel-caption d-none d-md-block rounded p-3">
+        <h5 class="text-primary fw-bold">Complexo Escolar Privado Emília Júlia</h5>
+        <p> Mais um parceiro que escolheu a qualidade da H.S Medical Vida!</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="carousel-item position-relative">
+      <img src="imagem/Convenios/3.png" class="d-block w-100" alt="Convênio 3">
+      <div class="overlay-dark"></div>
+      <div class="carousel-caption d-none d-md-block rounded p-3">
+        <h5 class="text-success fw-bold">Agora também com AngoCare</h5>
+        <p>começa aqui uma nova jornada em saúde.</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="carousel-item position-relative">
+      <img src="imagem/Convenios/4.jpeg" class="d-block w-100" alt="Convênio 4">
+      <div class="overlay-dark"></div>
+      <div class="carousel-caption d-none d-md-block rounded p-3">
+        <h5 class="text-success fw-bold">Agora também com AngoCare</h5>
+        <p> Portas abertas para cuidar de você com ainda mais atenção.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--  -->
+
+  <!-- MODAL DE DETALHES DO CONVÊNIO -->
+<div class="modal fade" id="convenioModal" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitulo"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+
+      <div class="modal-body">
+        <p id="modalDescricao"></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+ <!-- MODAL DE DETALHES DO CONVÊNIO -->
+
+  <!-- HERO -->
+  <section class="hero-convenios text-center text-white" >
+    <div class="container">
+      <h1 class="fw-bold" style="color: #0d6efd;">Convênios Atendidos</h1>
+      <p class="lead" style="color: #0d6efd;" >Confira os planos e convênios aceitos pela H.S Medical Vida</p>
+    </div>
+  </section>
+
+  <!-- FILTROS -->
+  <div class="container py-3" data-aos="fade-up" data-aos="fade-down">
+    <div class="row">
+      <div class="col-md-6 mb-2">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar convênio por nome...">
+      </div>
+      <div class="col-md-6 mb-2">
+        <select id="categoriaFiltro" class="form-select">
+          <option value="todos">Todos os Tipos</option>
+          <option value="Particular">Particulares</option>
+          <option value="Empresarial">Empresariais</option>
+          <option value="Seguradora">Seguradoras</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONVÊNIOS -->
+  <section class="container py-4" data-aos="fade-up" data-aos="fade-down">
+    <div class="row" id="convenioContainer"></div>
+  </section>
+
+  <!--Aqui começa o Não encontrou o seu convênio? --><!-- Secção: Não encontrou o seu convênio? -->
+<section class="py-5 bg-light" data-aos="fade-up" data-aos="fade-down">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Imagem -->
+      <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos="fade-down">
+        <img src="imagem/Não encontrou o que procura/1.png" alt="Convênio não encontrado" class="img-fluid h-100 object-fit-cover rounded">
+      </div>
+
+      <!-- Formulário -->
+      <div class="col-md-6" data-aos="fade-up" data-aos="fade-down">
+        <h4 class="mb-3 fw-bold"  style="color: rgb(49, 111, 226);">Não encontrou o seu convênio?</h4>
+        <p class="mb-4">Informe-nos qual convênio você gostaria de ver na nossa lista.</p>
+        <form id="formConvenioDesejado" 
+      action="https://formsubmit.co/informatico400@gmail.com" 
+      method="POST">
+
+  <div class="mb-3">
+    <label for="nomeDesejo" class="form-label">Seu nome</label>
+    <input type="text" class="form-control" id="nomeDesejo" name="Nome" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="convenioDesejado" class="form-label">Convênio desejado</label>
+    <input type="text" class="form-control" id="convenioDesejado" name="Convênio Desejado" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="emailDesejo" class="form-label">Email para contato</label>
+    <input type="email" class="form-control" id="emailDesejo" name="Email" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Solicitar Convênio</button>
+
+  <input type="hidden" name="_subject" value="Novo Convênio Desejado">
+  <input type="hidden" name="_captcha" value="false">
+  
+
+  <div id="msgSucessoConvenio" class="mt-3 text-success d-none">Enviado com sucesso!</div>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Secção: Seja Nosso Parceiro -->
+<section class="py-5" data-aos="fade-up" data-aos="fade-down">
+  <div class="container">
+    <div class="row align-items-center flex-md-row-reverse">
+      <!-- Imagem -->
+      <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos="fade-down">
+        <img src="imagem/Seja nosso parceiro/1.png" alt="Seja nosso parceiro" class="img-fluid h-100 object-fit-cover rounded">
+      </div>
+
+      <!-- Formulário -->
+      <div class="col-md-6" data-aos="fade-up" data-aos="fade-down">
+        <h4 class="mb-3 fw-bold" style="color: rgb(49, 111, 226);">Seja Nosso Parceiro</h4>
+        <p class="mb-4">Entre em contato e descubra como sua empresa ou seguradora pode se tornar nossa parceira.</p>
+       <!-- Formulário: Parceria -->
+<form id="formParceria" 
+      action="https://formsubmit.co/informatico400@gmail.com" 
+      method="POST">
+
+  <div class="mb-3">
+    <label for="nomeEmpresa" class="form-label">Nome da Empresa</label>
+    <input type="text" class="form-control" id="nomeEmpresa" name="Empresa" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="nomeRepresentante" class="form-label">Nome do Representante</label>
+    <input type="text" class="form-control" id="nomeRepresentante" name="Representante" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="emailParceria" class="form-label">Email</label>
+    <input type="email" class="form-control" id="emailParceria" name="Email" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="mensagemParceria" class="form-label">Mensagem</label>
+    <textarea class="form-control" id="mensagemParceria" name="Mensagem" rows="4" required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-success">Enviar Proposta</button>
+
+  <input type="hidden" name="_subject" value="Nova Solicitação de Parceria">
+  <input type="hidden" name="_captcha" value="false">
+ 
+
+  <div id="sucessoParceria" class="mt-3 text-success d-none">Enviado com sucesso!</div>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- GALERIA DE CONVÊNIOS --><!-- GALERIA DE CONVÊNIOS (GRID MENOR) -->
+<section class="container my-5" data-aos="fade-up" data-aos="fade-down">
+  <h2 class="text-center mb-4 fw-bold" style="color: rgb(49, 111, 226);">Galeria de Acordos e Convênios</h2>
+  <div class="row g-3">
+    <div class="col-md-6 col-lg-4">
+      <div class="gallery-item-small position-relative overflow-hidden rounded-3">
+        <img src="imagem/Convenios/5.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Acordo 1">
+        <div class="gallery-caption bg-dark bg-opacity-50 text-white p-2 position-absolute bottom-0 start-0 w-100">
+          Complexo Escolar Privado Emília Júlia
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="gallery-item-small position-relative overflow-hidden rounded-3">
+        <img src="imagem/Convenios/6.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Acordo 2">
+        <div class="gallery-caption bg-dark bg-opacity-50 text-white p-2 position-absolute bottom-0 start-0 w-100">
+          Complexo Escolar Privado Emília Júlia
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="gallery-item-small position-relative overflow-hidden rounded-3">
+        <img src="imagem/Convenios/7.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Acordo 3">
+        <div class="gallery-caption bg-dark bg-opacity-50 text-white p-2 position-absolute bottom-0 start-0 w-100">
+          Complexo Escolar Privado Emília Júlia
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="gallery-item-small position-relative overflow-hidden rounded-3">
+        <img src="imagem/Convenios/8.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Acordo 4">
+        <div class="gallery-caption bg-dark bg-opacity-50 text-white p-2 position-absolute bottom-0 start-0 w-100">
+          Complexo Escolar Privado Emília Júlia
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="gallery-item-small position-relative overflow-hidden rounded-3">
+        <img src="imagem/Convenios/5.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Acordo 5">
+        <div class="gallery-caption bg-dark bg-opacity-50 text-white p-2 position-absolute bottom-0 start-0 w-100">
+          Complexo Escolar Privado Emília Júlia
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ -->
+  <section class="container py-5" data-aos="fade-up" data-aos="fade-down">
+    <h3 class="text-center mb-4 fw-bold" style="color: rgb(49, 111, 226);">Perguntas Frequentes sobre Convênios</h3>
+    <div class="accordion" id="faqConvenio">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#resposta1">
+            Como saber se meu plano é aceito?
+          </button>
+        </h2>
+        <div id="resposta1" class="accordion-collapse collapse show" data-bs-parent="#faqConvenio">
+          <div class="accordion-body">Você pode verificar na lista acima ou entrar em contato pelo WhatsApp.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+            Quais serviços estão inclusos pelo convênio?
+          </button>
+        </h2>
+        <div id="resposta2" class="accordion-collapse collapse" data-bs-parent="#faqConvenio">
+          <div class="accordion-body">Cada convênio cobre serviços diferentes. Clique no card do convênio para mais detalhes.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta3">
+            Preciso de autorização para atendimento?
+          </button>
+        </h2>
+        <div id="resposta3" class="accordion-collapse collapse" data-bs-parent="#faqConvenio">
+          <div class="accordion-body">Em alguns casos, sim. Consulte seu plano ou entre em contato conosco.</div>
+        </div>
+      </div>
+
+       <div class="accordion-item">
+      <h2 class="accordion-header" id="faq1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#resposta1" aria-expanded="true">
+          Quais convênios são aceitos atualmente?
+        </button>
+      </h2>
+      <div id="resposta1" class="accordion-collapse collapse show" data-bs-parent="#faqConvenios">
+        <div class="accordion-body">
+          Aceitamos uma ampla variedade de convênios, incluindo planos particulares, empresariais e seguradoras de saúde. Veja a lista completa acima ou entre em contato.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+          Como saber se meu plano cobre determinado exame?
+        </button>
+      </h2>
+      <div id="resposta2" class="accordion-collapse collapse" data-bs-parent="#faqConvenios">
+        <div class="accordion-body">
+          Você pode verificar diretamente com sua operadora ou entrar em contato com nossa equipe para confirmação.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta3">
+          Preciso de autorização para atendimento via convênio?
+        </button>
+      </h2>
+      <div id="resposta3" class="accordion-collapse collapse" data-bs-parent="#faqConvenios">
+        <div class="accordion-body">
+          Em alguns casos, sim. Recomendamos que solicite a guia/autorização antecipadamente junto ao seu plano de saúde.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta4">
+          Posso usar mais de um convênio na mesma consulta?
+        </button>
+      </h2>
+      <div id="resposta4" class="accordion-collapse collapse" data-bs-parent="#faqConvenios">
+        <div class="accordion-body">
+          Não. A utilização de múltiplos convênios não é permitida no mesmo atendimento, conforme regras das operadoras.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta5">
+          Convênios cobrem exames laboratoriais?
+        </button>
+      </h2>
+      <div id="resposta5" class="accordion-collapse collapse" data-bs-parent="#faqConvenios">
+        <div class="accordion-body">
+          A maioria dos planos cobre exames laboratoriais básicos e específicos. Confirme com sua operadora ou conosco.
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+    <!-- MODAL -->
+  <div class="modal fade" id="convenioModal" tabindex="-1" data-aos="fade-up" data-aos="fade-down">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitulo">Nome do Convênio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="modalDescricao"></div>
+        <div class="modal-footer">
+          <a href="https://wa.me/244930139090" target="_blank" class="btn btn-success">
+            Agendar Atendimento <i class="bi bi-whatsapp ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- aqui começa o rodapé -->
+     <footer class="bg-dark text-light pt-5 pb-3" data-aos="fade-up" data-aos="fade-down">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="text-center mb-4">
+      <h4 class="fw-bold">Fale Conosco ou Visite-nos</h4>
+    </div>
+
+    <!-- Mapa + Contatos -->
+    <div class="row align-items-center">
+
+      <!-- 🗺️ MAPA REDUZIDO -->
+      <div class="col-md-6 mb-4">
+        <div class="ratio ratio-16x9 shadow rounded" style="height: 230px; max-height: 100%;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.1401282695324!2d13.143412411089418!3d-8.95923309106218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f3bafc85b91b%3A0x80842f65a9b38a1!2sCl%C3%ADnica%20H.S.%20Medical%20Vida!5e0!3m2!1spt-PT!2sao!4v1752849546850!5m2!1spt-PT!2sao" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- 📱 CONTATOS -->
+      <div class="col-md-6 mb-4 d-flex flex-column justify-content-center gap-3" style="height: 230px;">
+
+       <a href="https://wa.me/244930139090?text=Olá!%20Gostaria%20de%20informações%20sobre%20os%20serviços%20da%20clínica." class="btn btn-success" target="_blank">
+         <i class="bi bi-whatsapp me-1"></i> Entrar em contato via WhatsApp
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61574936338324" class="btn btn-primary" target="_blank"> 
+          <i class="bi bi-facebook me-1"></i> Entrar em contato via Facebook
+        </a>
+
+        <a href="tel:+244 930 139 090" class="btn btn-outline-light">
+          <i class="bi bi-telephone me-1"></i> Ligar: +244 930 139 090
+        </a>
+
+
+        <!-- código opcional de email caso não tenha nenhum email configurado.-->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=informatico400@gmail.com&su=Solicitação%20de%20Informações&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20clínica." 
+   target="_blank" class="btn btn-outline-light">
+  <i class="bi bi-envelope me-1"></i> Enviar via Gmail
+</a>
+ 
+
+      </div>
+    </div>
+
+    <!-- 🌐 REDES SOCIAIS COM ESTILO -->
+    <div class="text-center mt-4">
+        <p class="mb-2 fw-bold">Siga-nos nas redes sociais</p>
+        <div class="d-flex justify-content-center gap-3">
+
+        <a href="https://wa.me/244930139090?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." class="icon-social bg-whatsapp" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+      </a>
+
+      <a href="https://www.facebook.com/profile.php?id=61574936338324" class="icon-social bg-facebook"  target="_blank"><i class="bi bi-facebook"></i>
+      </a>
+
+        <a href="https://www.instagram.com/clinicahsmedicalvida?igsh=bTR3MGhzM2xjNTh4" class="icon-social bg-instagram" target="_blank"><i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@h.s.medical.vida" class="icon-social bg-tiktok" target="_blank"><i class="bi bi-tiktok"></i>
+        </a>
+        
+      </div>
+    </div>
+
+    <!-- Rodapé Inferior -->
+    <div class="text-center mt-4 small text-secondary">
+      © 2025 H.S Medical Vida – Todos os direitos reservados
+    </div>
+  </div>
+</footer>
+ <!-- aqui termina o rodapé -->
+
+ <!-- Scripts -->
+   <!--Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scripts Home.js -->
+  <script src="Js/convenio.js"></script>
+
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!--🎯 AOS (Animações de scroll) -->
+<script>
+
+  AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: false // ← permite repetir a animação sempre
+});
+
+</script>
+
+</body>
+</html>

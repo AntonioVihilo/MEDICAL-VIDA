@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords " content="MEDICAL VIDA, saúde, medicina, hospitalar, atendimento médico, serviços de saúde">
+      <meta name="description" content="MEDICAL VIDA é uma empresa dedicada a oferecer serviços de saúde de qualidade, com foco no atendimento médico e hospitalar. Nossa missão é garantir o bem-estar e a saúde de nossos pacientes através de uma equipe especializada e comprometida.A Clínica Medical Vida, é uma empresa Angolana, dedicada aos serviços de assistência médica, medicamentosa, imagiologia, analises clínica e de reabilitação física.">
+       <link rel="shortcut icon" href="imagem/log.png" type="image/x-icon">
+
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <title>H.S Medical Vida</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="Css/agendamento.css" />
+</head>
+
+<!-- WhatsApp Flutuante -->
+<a href="https://wa.me/930139090" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" data-aos="fade-up" data-aos="fade-down">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html"><img class="logo" src="../Html/imagem/log.png" alt="icondaclinica"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent" data-aos="fade-up" data-aos="fade-down">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="serviço.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="convenio.html">Convênios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- aqui termina a nav-->
+
+
+<section style="background-color: rgb(198, 209, 204);"></section>
+  <!-- Hero -->
+  <section class="hero d-flex align-items-center py-5 bg-light bg-opacity-50"data-aos="fade-up" data-aos="fade-down" >
+    <div class="container">
+      <div class="row align-items-center" >
+        <div class="col-md-6" data-aos="fade-right">
+          <h1 class="display-6 fw-bold" style="color: #007bff;">Agende sua consulta com facilidade</h1>
+          <p class="lead">Escolha o serviço, data e horário que mais se adapta à sua agenda.</p>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <img src="imagem/Agendamento/1.png" class="img-fluid" alt="Agendamento de consulta" id="imgagendar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de Agendamento -->
+  <section class="formulario-agendamento" bg-light data-aos="fade-up" data-aos="fade-down">
+  <div class="container">
+    <h2 class="text-center mb-4" style="color: #007bff;" >Preencha o formulário para agendar</h2>
+
+    <form id="formAgendamento" class="row g-3" method="POST" action="https://formsubmit.co/informatico400@gmail.com">
+      
+      <div class="col-md-6">
+        <label for="nome" class="form-label">Nome completo</label>
+        <input type="text" class="form-control" id="nome" name="Nome" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="telefone" class="form-label">Telefone / WhatsApp</label>
+        <input type="tel" class="form-control" id="telefone" name="Telefone" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email (opcional)</label>
+        <input type="email" class="form-control" id="email" name="Email" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="tipo" class="form-label" >Tipo de Atendimento</label>
+        <select class="form-select" id="tipo" name="Serviço" required>
+          <option selected disabled>Selecione</option>
+          <option>Consulta</option>
+          <option>Exame</option>
+          <option>Raio-X</option>
+          <option>Estomatologia</option>
+          <option>Procedimento</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="data" class="form-label">Data desejada</label>
+        <input type="date" class="form-control" id="data" name="Data" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="horario" class="form-label">Horário preferido</label>
+        <input type="time" class="form-control" id="horario" name="Horário" required>
+      </div>
+
+      <div class="col-12">
+        <label for="mensagem" class="form-label">Mensagem adicional</label>
+        <textarea class="form-control" id="mensagem" name="Mensagem" rows="3"></textarea>
+      </div>
+
+      <!-- Campos ocultos FormSubmit -->
+      <input type="hidden" name="_subject" value="Novo Agendamento do Site">
+      <input type="hidden" name="_autoresponse" value="Recebemos seu agendamento! Em breve entraremos em contato.">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- Mensagem de confirmação -->
+      <div id="mensagemConfirmacao" class="alert alert-success text-center d-none" role="alert">
+        ✅ Seu agendamento foi iniciado! Você será redirecionado para o concluir o agendamento.
+      </div>
+
+      <div class="col-12 text-center py-3">
+        <button type="submit" class="btn btn-success btn-lg px-5">Agendar</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <!-- Benefícios -->
+  <section class="beneficios" data-aos="fade-up" data-aos="fade-down" >
+    <div class="container">
+      <h3 class="text-center mb-4 py-3" style="color: #007bff;">Por que agendar online?</h3>
+      <div class="row text-center" data-aos="fade-up">
+        <div class="col-md-4">
+          <i class="bi bi-lightning-charge fs-1 text-success"></i>
+          <p>Rápido e fácil</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-check2-circle fs-1 text-success"></i>
+          <p>Confirmação imediata</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-people fs-1 text-success"></i>
+          <p>Atendimento personalizado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- aqui termina o formulário -->
+
+
+    <!-- aqui começa o rodapé -->
+     <footer class="bg-dark text-light pt-5 pb-3" data-aos="fade-up" data-aos="fade-down">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="text-center mb-4">
+      <h4 class="fw-bold">Fale Conosco ou Visite-nos</h4>
+    </div>
+
+    <!-- Mapa + Contatos -->
+    <div class="row align-items-center">
+
+      <!-- 🗺️ MAPA REDUZIDO -->
+      <div class="col-md-6 mb-4">
+        <div class="ratio ratio-16x9 shadow rounded" style="height: 230px; max-height: 100%;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.1401282695324!2d13.143412411089418!3d-8.95923309106218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f3bafc85b91b%3A0x80842f65a9b38a1!2sCl%C3%ADnica%20H.S.%20Medical%20Vida!5e0!3m2!1spt-PT!2sao!4v1752849546850!5m2!1spt-PT!2sao" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- 📱 CONTATOS -->
+      <div class="col-md-6 mb-4 d-flex flex-column justify-content-center gap-3" style="height: 230px;">
+
+       <a href="https://wa.me/244930139090?text=Olá!%20Gostaria%20de%20informações%20sobre%20os%20serviços%20da%20clínica." class="btn btn-success" target="_blank">
+         <i class="bi bi-whatsapp me-1"></i> Entrar em contato via WhatsApp
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61574936338324" class="btn btn-primary" target="_blank"> 
+          <i class="bi bi-facebook me-1"></i> Entrar em contato via Facebook
+        </a>
+
+        <a href="tel:244930139090" class="btn btn-outline-light">
+          <i class="bi bi-telephone me-1"></i> Ligar: +244 930 139 090
+        </a>
+
+       
+        <!-- código opcional de email caso não tenha nenhum email configurado.-->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=informatico400@gmail.com&su=Solicitação%20de%20Informações&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20clínica." 
+   target="_blank" class="btn btn-outline-light">
+  <i class="bi bi-envelope me-1"></i> Enviar via Gmail
+</a>
+ 
+
+      </div>
+    </div>
+
+    <!-- 🌐 REDES SOCIAIS COM ESTILO -->
+    <div class="text-center mt-4">
+        <p class="mb-2 fw-bold">Siga-nos nas redes sociais</p>
+        <div class="d-flex justify-content-center gap-3">
+
+        <a href="https://wa.me/244930139090?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." class="icon-social bg-whatsapp" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+      </a>
+
+      <a href="https://www.facebook.com/profile.php?id=61574936338324" class="icon-social bg-facebook"  target="_blank"><i class="bi bi-facebook"></i>
+      </a>
+
+        <a href="https://www.instagram.com/clinicahsmedicalvida?igsh=bTR3MGhzM2xjNTh4" class="icon-social bg-instagram" target="_blank"><i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="tiktok.com/@h.s.medical.vida" class="icon-social bg-tiktok" target="_blank"><i class="bi bi-tiktok"></i>
+        </a>
+        
+      </div>
+    </div>
+
+    <!-- Rodapé Inferior -->
+    <div class="text-center mt-4 small text-secondary">
+      © 2025 H.S Medical Vida – Todos os direitos reservados
+    </div>
+  </div>
+</footer>
+ <!-- aqui termina o rodapé -->
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Js/agendamento.js"></script>
+
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!--🎯 AOS (Animações de scroll) -->
+<script>
+
+  AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: false // ← permite repetir a animação sempre
+});
+
+</script>
+
+</body>
+</html>

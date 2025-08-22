@@ -1,0 +1,391 @@
+/*estilização da nav, log e link*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+.logo{
+  width: 120px;
+  height: auto;
+}
+.navbar {
+  height: auto;
+}
+
+.nav-link{
+  margin: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: #0cac19a4;
+  
+}
+/*Aqui termina a nav,log e link*/
+
+
+/* BOTÃO TOGGLER (MOBILE) */
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* CORREÇÃO DO MENU RESPONSIVO */
+#navbarContent {
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  #navbarContent {
+    margin-left: 15%;
+  }
+}
+
+/* aqui termina a navbar */
+
+/* watsapp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #20bf5d;
+}
+#iconEspecialidades{
+  font-size: 40px;
+}
+
+/* redes sociais*/
+.icon-social {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon-social:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Cores personalizadas */
+.bg-whatsapp {
+  background-color: #25D366;
+}
+
+.bg-facebook {
+  background-color: #3b5998;
+}
+
+.bg-instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+}
+
+.bg-tiktok {
+  background-color: #010101;
+}
+/* aqui termina toda estelização das redes sociais */
+
+/* === HERO DA PÁGINA DE SERVIÇOS === */
+.hero-servicos {
+  background: linear-gradient(to right, #f0f8ff, #ffffff);
+  padding: 60px 0;
+}
+
+.hero-servicos h1 {
+  color: #0d6efd; /* Bootstrap Primary */
+  font-weight: 700;
+}
+
+.hero-servicos p {
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.hero-servicos .btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+}
+
+/* === DESCRIÇÃO ANTES DA GRADE === */
+.descricao-servicos {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.descricao-servicos p {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+/* === aqui termina HERO DA PÁGINA DE SERVIÇOS === */
+
+
+/* Cor personalizada para botão ginecologia */
+.btn-outline-pink {
+  color: #e83e8c;
+  border-color: #e83e8c;
+}
+
+.btn-outline-pink:hover {
+  background-color: #e83e8c;
+  color: white;
+}
+
+
+#logES{
+  width: 70%;
+}
+#cardespecialidade{
+width: 90%;
+height: 90%;
+margin-left: 5%;
+}
+/* aqui termina a especialidade */
+
+/* === HERO SECTION === */
+.hero-section {
+  background: linear-gradient(to right, #01796f, #00bfa6);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.hero-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+/* === ABAS DE SERVIÇOS === */
+.servicos-tabs {
+  padding: 60px 0;
+}
+.servicos-tabs .nav-tabs .nav-link {
+  font-weight: 500;
+  color: #00bfa6;
+  border: none;
+}
+.servicos-tabs .nav-tabs .nav-link.active {
+  background-color: #00bfa6;
+  color: #fff;
+  border-radius: 0;
+}
+.servicos-tabs .tab-content {
+  margin-top: 30px;
+}
+
+/* === CARD DE SERVIÇO/EXAME/CONSULTA === */
+.card-servico {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.card-servico:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+.card-servico i {
+  font-size: 2.5rem;
+  color: #00bfa6;
+  margin-bottom: 10px;
+}
+.card-servico .btn-agendar {
+  margin-top: 15px;
+  background-color: #00bfa6;
+  color: #fff;
+}
+.card-servico .btn-agendar:hover {
+  background-color: #019e8c;
+}
+
+/* === MODAL PERSONALIZADO === */
+.modal-header {
+  background-color: #00bfa6;
+  color: #fff;
+  border-bottom: none;
+}
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+}
+.modal-footer .btn-primary {
+  background-color: #00bfa6;
+  border: none;
+}
+.modal-footer .btn-primary:hover {
+  background-color: #019e8c;
+}
+
+/* === FILTRO E BUSCA === */
+.filtro-busca {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.filtro-busca input {
+  flex: 1;
+  min-width: 200px;
+}
+.filtro-busca select {
+  min-width: 180px;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+  .card-especialidade,
+  .card-servico {
+    margin-bottom: 20px;
+  }
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+}
+/* === aqui termina === */
+
+/* ==========================
+   Estilização Geral
+========================== */
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #004080;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* 🔵 Hero */
+header {
+  background: linear-gradient(120deg, #e0f7fa, #fff);
+  border-bottom: 2px solid #d1ecf1;
+}
+/* ===== Estilos Gerais dos Cards ===== */
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover em todos os cards */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Botão padrão */
+.btn-outline-primary {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.4);
+}
+
+/* ===== Cores por categoria ===== */
+
+/* CONSULTAS */
+#consultasContainer .card {
+  background-color: #e6f2ff; /* azul claro */
+}
+#consultasContainer .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+#consultasContainer .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* EXAMES */
+#examesContainer .card {
+  background-color: #f3fce5; /* verde clarinho */
+}
+#examesContainer .btn-outline-primary {
+  border-color: #28a745;
+  color: #28a745;
+}
+#examesContainer .btn-outline-primary:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* raio_x */
+#RaioXContainer .card {
+  background-color: #e4e3e1; /* cinzeto clarinho */
+}
+#raio_xContainer .btn-outline-primary {
+  border-color: #ac9827;
+  color: #ac9827;
+}
+#raio_xContainer .btn-outline-primary:hover {
+  background-color: #ac9827;
+  color: white;
+}
+
+/* Estomatologia */
+#EstomatologiaContainer .card {
+  background-color: #eedcdc; /* vermelho clarinho */
+}
+#EstomatologiaContainer .btn-outline-primary {
+  border-color: #ac9827;
+  color: #ac9827;
+}
+#EstomatologiaContainer .btn-outline-primary:hover {
+  background-color: #ac9827;
+  color: white;
+}
+
+/* OUTROS */
+#outrosContainer .card {
+  background-color: #fdc5e1; /* lilás claro */
+}
+#outrosContainer .btn-outline-primary {
+  border-color: #6f42c1;
+  color: #6f42c1;
+}
+#outrosContainer .btn-outline-primary:hover {
+  background-color: #6f42c1;
+  color: white;
+}
+
