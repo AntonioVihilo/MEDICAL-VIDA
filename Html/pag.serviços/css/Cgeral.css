@@ -1,0 +1,185 @@
+   body {
+      font-family: Arial, sans-serif;
+    }
+    .logo {
+      width: 120px;
+      height: auto;
+    }
+    .nav-link {
+      margin: 20px;
+    }
+    .nav-link:hover {
+      color: #0cac19a4;
+    }
+    /* BOTÃO TOGGLER (MOBILE) */
+    .navbar-toggler {
+      border: none;
+      font-size: 1.25rem;
+    }
+    .navbar-toggler:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    #navbarContent {
+      margin-left: auto;
+    }
+    @media (min-width: 992px) {
+      #navbarContent {
+        margin-left: 15%;
+      }
+    }
+
+    /* WhatsApp flutuante */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 32px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: #20bf5d;
+    }
+    @keyframes slideIn {
+      from {
+        transform: translateX(120%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+    }
+/* Seção Consulta - azul suave */
+.consulta-geral {
+  background-color: #f0f6fb; /* Azul bem leve com aparência de sombra */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+/* Seção Consulta - azul suave */
+
+/* FAQ - título menor */
+.faq h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.faq img {
+  max-height: 250px;
+  object-fit: cover;
+}
+/* FAQ - título menor */
+
+/* Galeria */
+.galeria-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.galeria-item:hover img {
+  transform: scale(1.1);
+}
+
+.galeria-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.galeria-item:hover .overlay {
+  opacity: 1;
+}
+/* Galeria */
+
+    /* Seção Hero */
+ /* Fundo cinza suave */
+.bg-cinza {
+  background-color: #f5f5f5; /* cinza bem claro */
+  color: #333; /* texto mais escuro para contraste */
+}
+
+    /* Seção Benefícios */
+    .beneficio-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+  /* Fundo cinza suave */
+.bg-cinza {
+  background-color: #f5f5f5;
+}
+
+/* Título principal */
+.titulo-consulta {
+  color: #0077cc; /* Azul suave */
+  font-weight: 700; /* Negrito */
+}
+
+/* Texto secundário */
+.texto-consulta {
+  color: #000; /* Preto */
+}
+
+/* Botão estilo WhatsApp */
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20b955;
+  color: #fff;
+}
+/*  */
+
+    /* Ícones sociais */
+    .icon-social {
+      width: 50px;
+      height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    .icon-social:hover {
+      transform: scale(1.15);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .bg-whatsapp { background-color: #25D366; }
+    .bg-facebook { background-color: #3b5998; }
+    .bg-instagram { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf); }
+    .bg-tiktok { background-color: #070707; }
