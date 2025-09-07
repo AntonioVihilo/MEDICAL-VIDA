@@ -1,0 +1,210 @@
+   body {
+      font-family: Arial, sans-serif;
+    }
+    .logo {
+      width: 120px;
+      height: auto;
+    }
+    .nav-link {
+      margin: 20px;
+    }
+    .nav-link:hover {
+      color: #0cac19a4;
+    }
+    /* BOTÃO TOGGLER (MOBILE) */
+    .navbar-toggler {
+      border: none;
+      font-size: 1.25rem;
+    }
+    .navbar-toggler:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    #navbarContent {
+      margin-left: auto;
+    }
+    @media (min-width: 992px) {
+      #navbarContent {
+        margin-left: 15%;
+      }
+    }
+    
+/* watsapp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #20bf5d;
+}
+/* termina watsapp */
+
+/* emergência */
+.CTA{
+  background: #25d366;
+}
+
+/* termina emergência */
+
+@keyframes slideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* redes sociais*/
+/* ====== HERO Section - Internamento ====== */
+.hero-internamento {
+  background: #f8f9fa;
+  color: #212529;
+  padding: 80px 20px;
+}
+.hero-internamento h1 {
+  font-weight: bold;
+  color: #0d6efd; /* Azul suave */
+}
+.hero-internamento p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* ====== Seção Explicativa ====== */
+.explicacao-internamento h2 {
+  font-weight: bold;
+  color: #0d6efd;
+}
+.explicacao-internamento p {
+  color: #212529;
+  line-height: 1.7;
+}
+
+/* ====== Lista Numerada ====== */
+.lista-internamento h2 {
+  font-weight: bold;
+  color: #0d6efd;
+}
+.lista-internamento .list-group-item {
+  font-size: 1rem;
+  padding: 12px 15px;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  color: #212529;
+}
+.lista-internamento .list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* ====== FAQ ====== */
+.faq-internamento h2 {
+  font-weight: bold;
+  color: #0d6efd;
+}
+.accordion-button {
+  font-weight: 500;
+  color: #212529;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+.accordion-body {
+  color: #333;
+}
+
+/* ====== Galeria ====== */
+.galeria-internamento h2 {
+  font-weight: bold;
+  color: #0d6efd;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 250px;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantém proporção sem distorcer */
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+.gallery-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+
+/* Ícones Sociais em Bolhas */
+.icon-social {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon-social:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+/* Termina redes sociais*/
+
+/* Cores personalizadas dos icon das redes sociais*/
+.bg-whatsapp {
+  background-color: #25D366;
+}
+
+.bg-facebook {
+  background-color: #3b5998;
+}
+
+.bg-instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+}
+
+.bg-tiktok {
+  background-color: #070707;
+}
+
+/* Cores personalizadas dos icon das redes sociais */

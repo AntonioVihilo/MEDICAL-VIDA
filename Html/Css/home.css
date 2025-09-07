@@ -49,6 +49,31 @@ body {
 }
 /* aqui termina a CORREÇÃO DO MENU RESPONSIVO */
 
+/* Estilo dos cards e botões */
+  .card-servico {
+    border-radius: 15px;
+    background-color: #e9f5ff;
+    border: 1px solid #cce0ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-servico:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+  }
+
+  .saber-mais-btn {
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .saber-mais-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+/* termina Saber mais para os card */
 
 /*carousel*/  
 .carousel-item img{

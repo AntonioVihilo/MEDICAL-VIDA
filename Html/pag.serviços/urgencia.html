@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
+<head> 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords " content="MEDICAL VIDA, saúde, medicina, hospitalar, atendimento médico, serviços de saúde">
       <meta name="description"HS MEDICAL VIDA é uma empresa dedicada a oferecer serviços de saúde de qualidade, com foco no atendimento médico e hospitalar. Nossa missão é garantir o bem-estar e a saúde de nossos pacientes através de uma equipe especializada e comprometida.
       A Clínica Medical Vida, é uma empresa Angolana, dedicada aos serviços de assistência médica, medicamentosa, imagiologia, analises clínica e de reabilitação física.>
-  <link rel="shortcut icon" href="imagem/log.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../imagem/log.png" type="image/x-icon">
 
   <!-- AOS CSS -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <!-- Estilo personalizado Css -->
-  <link rel="stylesheet" href="css/contacto.css" />
+  <link rel="stylesheet" href="css/urgencia.css" />
 </head>
 
 <!-- WhatsApp Flutuante -->
@@ -29,84 +29,142 @@
 </a>
 <!--Aqui termina WhatsApp Flutuante -->
 
+
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" data-aos="fade-up" data-aos="fade-down">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="../index.html"><img class="logo" src="imagem/log.png" alt="icondaclinica"></a>
+      <a class="navbar-brand fw-bold" href="../../index.html"><img class="logo" src="../imagem/log.png" alt="icondaclinica"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarContent" data-aos="fade-up" data-aos="fade-down">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="serviço.html">Serviços</a></li>
-          <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="convenio.html">Convênios</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../serviço.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="../agendamento.html">Agendamento</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="../convenio.html">Convênios</a></li>
         </ul>
       </div>
     </div>
   </nav>
 <!-- Aqui termina a Navbar -->
 
-<!--Aqui começa -->
-<section class="container py-5" data-aos="fade-up" data-aos="fade-down">
-  <div class="row g-5">
-    <!-- Formulário -->
-    <div class="col-md-6">
-      <h4 class="mb-4">Entre em Contato</h4>
-   <form id="formContato">
-  <div class="mb-3 input-group">
-    <span class="input-group-text"><i class="bi bi-person-fill text-primary"></i></span>
-    <input type="text" class="form-control" id="nome" placeholder="Nome completo" required />
+  <!-- HERO -->
+<section class="hero-urgencia text-center">
+  <div class="container">
+    <h1>Atendimento de Urgência</h1>
+    <p>Estamos preparados para oferecer atendimento rápido e eficiente em situações emergenciais.</p>
+    <a href="https://wa.me/244930139090?text=Olá!%20Preciso%20de%20atendimento%20de%20urgência."
+       target="_blank" class="btn btn-primary btn-lg mt-3">
+      <i class="bi bi-whatsapp"></i> Solicitar Atendimento
+    </a>
   </div>
-  <div class="mb-3 input-group">
-    <span class="input-group-text"><i class="bi bi-envelope-fill text-primary"></i></span>
-    <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required />
-  </div>
-  <div class="mb-3 input-group">
-    <span class="input-group-text"><i class="bi bi-chat-left-text-fill text-primary"></i></span>
-    <input type="text" class="form-control" id="assunto" placeholder="Assunto" required />
-  </div>
-  <div class="mb-3 input-group">
-    <span class="input-group-text"><i class="bi bi-pencil-fill text-primary"></i></span>
-    <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
-  </div>
+</section>
 
-  <div class="d-grid gap-2">
-    <button type="submit" class="btn btn-success">
-      <i class="bi bi-whatsapp"></i> Enviar via WhatsApp
-    </button>
-
-    <!-- Botão de enviar por e-mail -->
-    <button type="button" class="btn btn-primary" id="btnEmail">
-      <i class="bi bi-envelope-paper-fill"></i> Enviar por Email
-    </button>
-  </div>
-
-  <div id="sucessoMsg" class="alert alert-success mt-3 d-none">
-    Enviado com sucesso. Entraremos em contacto em breve.
-  </div>
-</form>
-
-    </div>
-
-    <!-- Informações da Clínica -->
-    <div class="col-md-6" data-aos="fade-up" data-aos="fade-down">
-      <h4 class="mb-4">Informações da Clínica</h4>
-      <p><i class="bi bi-geo-alt-fill text-primary me-2"></i> Rua Direita do Benfica, Bairro das Salinas</p>
-      <p><i class="bi bi-geo-fill text-primary me-2"></i> Município de Belas</p>
-      <p><i class="bi bi-building text-primary me-2"></i> NIF: 5001211099</p>
-      <p><i class="bi bi-envelope-at-fill text-primary me-2"></i> contactohsmedicalvida@gmail.com</p>
-      <p><i class="bi bi-telephone-fill text-primary me-2"></i> 930 139 090</p>
-      <p><i class="bi bi-clock-fill text-primary me-2"></i> Atendimento: 24h / 24h</p>
+<!-- SEÇÃO EXPLICATIVA -->
+<section class="explicacao-urgencia py-5">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <h2>O que é o atendimento de urgência?</h2>
+        <p>
+          O setor de urgência da nossa clínica está preparado para atender casos que precisam de intervenção rápida,
+          como febre alta, crises de dor intensa, ferimentos, quedas, reações alérgicas e outros quadros que necessitam
+          de atenção imediata.
+        </p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="imagem/urgencia1.jpg" alt="Atendimento de urgência" class="img-fluid rounded shadow">
+      </div>
     </div>
   </div>
 </section>
-  <!-- Termina aqui -->
+
+<!-- PRINCIPAIS SITUAÇÕES -->
+<section class="lista-urgencia py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Principais Situações de Urgência</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Ferimentos com sangramento intenso</li>
+      <li class="list-group-item">Crises asmáticas ou dificuldade respiratória</li>
+      <li class="list-group-item">Dor abdominal aguda</li>
+      <li class="list-group-item">Reações alérgicas graves</li>
+      <li class="list-group-item">Desmaios e convulsões</li>
+      <li class="list-group-item">Pressão arterial muito alta ou muito baixa</li>
+    </ul>
+    <div class="text-center mt-4">
+      <a href="https://wa.me/244930139090?text=Olá!%20Preciso%20de%20atendimento%20de%20urgência."
+         target="_blank" class="btn btn-primary">
+        <i class="bi bi-whatsapp"></i> Solicitar Agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-urgencia py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold style="color: #007bff;">Perguntas Frequentes</h2>
+    <div class="accordion" id="faqUrgencia">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            O que diferencia urgência de emergência?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqUrgencia">
+          <div class="accordion-body">
+            A urgência é quando há necessidade de atendimento rápido, mas a vida não está imediatamente em risco.
+            Já a emergência é quando há risco imediato de morte e exige intervenção imediata.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            Posso ir diretamente ao setor de urgência sem marcar consulta?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqUrgencia">
+          <div class="accordion-body">
+            Sim, o setor de urgência funciona sem necessidade de agendamento. Basta dirigir-se até a clínica.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="galeria-urgencia py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Nossa Estrutura de Urgência</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="imagem/urgencia2.jpg" class="img-fluid" alt="Sala de atendimento">
+          <div class="gallery-overlay"><p>Sala de Atendimento</p></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="imagem/urgencia3.jpg" class="img-fluid" alt="Equipamentos modernos">
+          <div class="gallery-overlay"><p>Equipamentos Modernos</p></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="imagem/urgencia4.jpg" class="img-fluid" alt="Equipe médica">
+          <div class="gallery-overlay"><p>Equipe Médica Preparada</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
     <!-- aqui começa o rodapé -->
@@ -150,14 +208,16 @@
           <i class="bi bi-telephone me-1"></i> Ligar: +244 930 139 090
         </a>
 
-      
+        <a href="mailto:informatico400@gmail.combject=Contato%20via%20site&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços." class="btn btn-outline-light">
+         <i class="bi bi-envelope me-1"></i> Enviar e-mail
+        </a>
 
-        <!-- código opcional de email caso não tenha nenhum email configurado. -->
+        <!-- código opcional de email caso não tenha nenhum email configurado.
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=informatico400@gmail.com&su=Solicitação%20de%20Informações&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20clínica." 
    target="_blank" class="btn btn-outline-light">
   <i class="bi bi-envelope me-1"></i> Enviar via Gmail
 </a>
-
+ -->
 
       </div>
     </div>
@@ -191,16 +251,15 @@
 </footer>
  <!-- aqui termina o rodapé -->
 
-  <!-- Scripts -->
+                                              <!-- Scripts -->
    <!--Bootstrap Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Scripts Home.js -->
-  <script src="Js/contacto.js"></script>
+  <script src="Js/urgencia.js"></script>
 
   <!-- AOS JS -->
+    
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<!--🎯 AOS (Animações de scroll) -->
 <script>
 
   AOS.init({
