@@ -60,6 +60,10 @@
   background: #25d366;
 }
 
+#rx{
+  width: 55%;
+}
+
 /* termina emergência */
 
 @keyframes slideIn {

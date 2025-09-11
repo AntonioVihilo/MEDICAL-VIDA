@@ -29,6 +29,9 @@
       }
     }
     
+#Inter{
+  width: 62%;
+}
 /* watsapp */
 .whatsapp-float {
   position: fixed;

@@ -29,6 +29,10 @@
       }
     }
     
+   #Card{
+    width: 44%;
+    font-size: 15px;
+   } 
 /* watsapp */
 .whatsapp-float {
   position: fixed;

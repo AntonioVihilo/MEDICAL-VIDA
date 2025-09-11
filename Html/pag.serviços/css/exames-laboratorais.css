@@ -48,7 +48,12 @@
   justify-content: center;
   transition: transform 0.2s ease;
 }
-
+#Iimg{
+  height: 80%;
+}
+#Lab{
+  width: 70%;
+}
 .whatsapp-float:hover {
   transform: scale(1.1);
   background-color: #20bf5d;

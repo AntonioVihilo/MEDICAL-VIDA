@@ -29,6 +29,9 @@
       }
     }
     
+  #Urg{
+    width: 75%;
+  }
 /* watsapp */
 .whatsapp-float {
   position: fixed;

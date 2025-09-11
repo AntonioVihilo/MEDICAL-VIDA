@@ -54,7 +54,10 @@
   background-color: #20bf5d;
 }
 /* termina watsapp */
-
+#Dente{
+  width: 80%;
+ 
+}
 /* ===== HERO Section ===== */
 section.bg-light {
   background-color: #f8f9fa !important;

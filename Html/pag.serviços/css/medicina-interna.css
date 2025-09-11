@@ -54,7 +54,11 @@
   background-color: #20bf5d;
 }
 /* termina watsapp */
-
+#Md{
+  width: 100%;
+  height: auto;
+ 
+}
 /* emergência */
 .CTA{
   background: #25d366;

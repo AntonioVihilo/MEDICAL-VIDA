@@ -62,6 +62,11 @@
         opacity: 1;
       }
     }
+
+    #CG{
+      width: 64%;
+      margin-left: 25%;
+    }
 /* Seção Consulta - azul suave */
 .consulta-geral {
   background-color: #f0f6fb; /* Azul bem leve com aparência de sombra */
