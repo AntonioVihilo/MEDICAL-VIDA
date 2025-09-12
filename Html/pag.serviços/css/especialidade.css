@@ -29,6 +29,10 @@
       }
     }
     
+#Esp{
+  width: 65%;
+ 
+}
 /* watsapp */
 .whatsapp-float {
   position: fixed;
